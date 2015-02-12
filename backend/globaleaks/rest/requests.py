@@ -10,8 +10,8 @@
 uuid_regexp                       = r'^([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})$'
 uuid_regexp_or_empty              = r'^([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})$|^$'
 receiver_img_regexp               = r'^([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}).png$'
-email_regexp                      = r'^([\w-]+\.)*[\w-]+@([\w-]+\.)+[a-z]{2,4}$|^$'
-email_regexp_or_empty             = r'^([\w-]+\.)*[\w-]+@([\w-]+\.)+[a-z]{2,4}$|^$'
+email_regexp                      = r'^([\w-]+\.)*[\w-]+@([\w-]+\.)+[a-z]{2,9}$|^$'
+email_regexp_or_empty             = r'^([\w-]+\.)*[\w-]+@([\w-]+\.)+[a-z]{2,9}$|^$'
 hidden_service_regexp             = r'^http://[0-9a-z]{16}\.onion$'
 hidden_service_regexp_or_empty    = r'^http://[0-9a-z]{16}\.onion$$|^$'
 https_url_regexp                  = r'^https://([0-9a-z\-]+)\.(.*)$'
@@ -136,7 +136,6 @@ adminNodeDesc = {
     'admin_language': unicode,
     'admin_timezone': int,
     'enable_custom_privacy_badge': bool,
-    'custom_privacy_badge_tbb': unicode,
     'custom_privacy_badge_tor': unicode,
     'custom_privacy_badge_none': unicode,
     'header_title_homepage': unicode,
@@ -258,7 +257,6 @@ anonNodeDesc = {
     'disable_security_awareness_badge': bool,
     'disable_security_awareness_questions': bool,
     'enable_custom_privacy_badge': bool,
-    'custom_privacy_badge_tbb': unicode,
     'custom_privacy_badge_tor': unicode,
     'custom_privacy_badge_none': unicode,
 }
