@@ -20,7 +20,7 @@
     <div class="form-group">
       <label>
         <input data-ng-model="admin.node.allow_unencrypted" data-ng-click="open_modal_allow_unencrypted()" type="checkbox" />
-        <span data-translate>Enable insecure configuration without PGP encryption.</span>
+       <span data-translate>Enable insecure configuration without PGP encryption</span>
       </label>
       <div data-ng-show="admin.node.allow_unencrypted">
         <span class="label label-danger" data-translate>Danger</span>
@@ -32,7 +32,7 @@
     <div class="form-group">
       <label>
         <input data-ng-model="admin.node.allow_iframes_inclusion" type="checkbox" />
-        <span data-translate>Allow other websites to include the platform inside iframes.</span>
+        <span data-translate>Allow other websites to include the platform inside iframes</span>
       </label>
       <div data-ng-show="admin.node.allow_iframes_inclusion">
         <span class="label label-danger" data-translate>Danger</span>
@@ -52,15 +52,7 @@
 
     <div class="form-group" data-ng-show="admin.node.enable_custom_privacy_badge">
       <label data-translate>Custom Privacy Badge</label>
-      <label data-translate>(TBB condition)</label>
-      <div>
-        <input class="form-control" data-ng-model="admin.node.custom_privacy_badge_tbb" type="text" />
-      </div>
-    </div>
-
-    <div class="form-group" data-ng-show="admin.node.enable_custom_privacy_badge">
-      <label data-translate>Custom Privacy Badge</label>
-      <label data-translate>(Tor condition)</label>
+      <label>(<span data-translate>Text shown when the whistleblower is using Tor</span>)</label>
       <div>
         <input class="form-control" data-ng-model="admin.node.custom_privacy_badge_tor" type="text" />
       </div>
@@ -68,7 +60,7 @@
 
     <div class="form-group" data-ng-show="admin.node.enable_custom_privacy_badge">
       <label data-translate>Custom Privacy Badge</label>
-      <label data-translate>(Traditional Browser)</label>
+      <label>(<span data-translate>Text shown when the whistleblower is not using Tor</span>)</label>
       <div>
         <input class="form-control" data-ng-model="admin.node.custom_privacy_badge_none" type="text" />
       </div>
